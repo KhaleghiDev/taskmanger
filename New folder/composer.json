@@ -1,0 +1,20 @@
+{
+    "name": "abolfazl/taskmanger",
+    "description": "add project and mangertask and tellphone book (with html5,css3,js,php,mysql)",
+    "type": "project",
+    "require": {
+        "hekmatinasser/verta": "^8.3"
+    },
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Abolfazl\\Taskmanger\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "KhaleghiDev",
+            "email": "abolfazlkhaleghi1474@yahoo.com"
+        }
+    ]
+}
