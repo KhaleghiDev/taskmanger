@@ -1,4 +1,4 @@
-<?=implode("-",$tasks) ." - ".rand(100,123)?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -26,13 +26,26 @@
         </div>
       </div>
       <div class="menu">
-        <div class="title">Navigation</div>
+        <div class="title">Folders</div>
         <ul>
-          <li> <i class="fa fa-home"></i>Home</li>
-          <li><i class="fa fa-signal"></i>Activity</li>
-          <li class="active"> <i class="fa fa-tasks"></i>Manage Tasks</li>
-          <li> <i class="fa fa-envelope"></i>Messages</li>
+          <?php foreach($folders as $folder):?>
+          <li> 
+          <a class="list" href="?folder=<?=$folder->id?>">
+          <i class="fa fa-folder"></i><?=$folder->title?>
+          </a>
+          <a class="delete" href="?deletefolder=<?=$folder->id?>">
+          <i class="fa fa-trash-o"></i>
+          </a>
+          
+          </li>
+         <?php endforeach;?>
+          <li class="active"> <i class="fa fa-folder-open"></i>Manage Tasks</li>
+          
         </ul>
+        <form action="#" method="post">
+            <input class="w-70" name="title"  type="text"  placeholder="add folder ...">
+            <button class="btn" type="button" type="submit">+</button>
+        </form>
       </div>
     </div>
     <div class="view">

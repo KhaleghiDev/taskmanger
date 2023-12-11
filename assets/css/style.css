@@ -267,3 +267,29 @@ body {
 .clear {
   clear: both;
 }
+input{
+padding: 4px;
+border: 1px solid #aab1c7;
+border-radius: 5px
+}
+.btn{
+  padding: 4px;
+  border: 1px solid #aab1c7;
+  border-radius: 5px
+  }
+  .w-70{
+    width: 68%;
+  }
+a.list {
+  text-decoration: none;
+  color: #54b9ce;
+}
+
+a.delete {
+  float: right;
+  color: red;
+}
+a.delete:hover {
+ font-size: 1.49rem;
+ 
+}

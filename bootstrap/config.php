@@ -1,5 +1,7 @@
 <?php
-$dataconfig=[
-    
-    "database"=>""
+$dataconfig=(object)[
+    "server"=>"localhost",
+    "database"=>"taskmanager",
+    "user"=>"root",
+    "pass"=>""
 ];
