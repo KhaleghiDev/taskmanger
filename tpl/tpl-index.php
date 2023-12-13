@@ -42,10 +42,10 @@
           <li class="active"> <i class="fa fa-folder-open"></i>Manage Tasks</li>
           
         </ul>
-        <form action="#" method="post">
-            <input class="w-70" name="title"  type="text"  placeholder="add folder ...">
-            <button class="btn" type="button" type="submit">+</button>
-        </form>
+     
+            <input class="w-70" id="inputFolderInput" name="title"  type="text"  placeholder="add folder ...">
+            <button class="btn" id="addFolderBtn" type="submit">+</button>
+     
       </div>
     </div>
     <div class="view">
